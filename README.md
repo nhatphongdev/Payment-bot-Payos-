@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="100" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ULmmyJBs3PlqlSpI_pJTDenFeJFhi8UAQ&s" width="100" />
   <h1>Discord PayOS Bot</h1>
   <p>Bot thanh toán PayOS cho Discord server, hỗ trợ quản lý đơn hàng, thống kê, tiện ích quản trị và nhiều hơn nữa.</p>
 </div>
