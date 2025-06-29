@@ -8,9 +8,23 @@ load_dotenv()  # Tải biến môi trường từ file .env
 token = os.getenv('TOKEN')
 
 # Khởi tạo bot với prefix '!'
+
+# Để hỗ trợ slash command, cần dùng discord.Bot hoặc commands.Bot với intents và thêm application_commands
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
+
+
+
+# Đăng ký tree cho slash command sau khi đã load xong extension (đảm bảo hybrid_command cũng được sync)
+@bot.event
+async def on_ready():
+    print(f'Bot đã đăng nhập với tên {bot.user}!')
+    try:
+        synced = await bot.tree.sync()
+        print(f"Đã sync {len(synced)} slash command.")
+    except Exception as e:
+        print(f"Lỗi khi sync slash command: {e}")
 
 # Sự kiện khi bot sẵn sàng
 @bot.event
