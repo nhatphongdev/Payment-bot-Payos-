@@ -21,11 +21,11 @@
 3. Tạo file `.env` và điền các thông tin cần thiết:
    ```env
    TOKEN=YOUR_DISCORD_BOT_TOKEN
-   PAYOS_CLIENT_ID=...
-   PAYOS_API_KEY=...
-   PAYOS_CHECKSUM_KEY=...
-   LOG_PAYMENT_CHANNEL_ID=YOUR_CHANNEL_ID (Kênh logs thông tin thanh toán)
-   DELAY=10 (Thời gian để check trạng thái thanh toán)
+   PAYOS_CLIENT_ID=client_id
+   PAYOS_API_KEY=api_key
+   PAYOS_CHECKSUM_KEY=payos_checksum_key
+   LOG_PAYMENT_CHANNEL_ID=YOUR_CHANNEL_ID #(Kênh logs thông tin thanh toán)
+   DELAY=10 #(Thời gian để check trạng thái thanh toán)
    ```
 
 ### 2. Chạy bot
